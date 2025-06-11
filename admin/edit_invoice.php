@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->close();
     $conn->close();
 
-    header("Location: dashboard.php?tab=invoices&message=" . urlencode($message));
+    header("Location: sidebar.php?tab=invoices&message=" . urlencode($message));
     exit();
 }
 

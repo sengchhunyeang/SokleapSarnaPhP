@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($stmt->execute()) {
         $message = "Medicine updated successfully.";
-        header("Location: dashboard.php?tab=medicines&message=" . urlencode($message));
+        header("Location: sidebar.php?tab=medicines&message=" . urlencode($message));
         exit();
     } else {
         $message = "Error updating medicine.";

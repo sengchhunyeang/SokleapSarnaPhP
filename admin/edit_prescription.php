@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("sissssi", $patient_name, $age, $gender, $diagnosis, $doctor_name, $date, $id);
 
     if ($stmt->execute()) {
-        header("Location: dashboard.php");
+        header("Location: sidebar.php");
         exit();
     } else {
         echo "Error updating prescription.";

@@ -1,5 +1,5 @@
 <?php
-// dashboard.php
+// sidebar.php
 require 'db.php';
 ?>
 <!DOCTYPE html>

@@ -22,6 +22,6 @@ $stmt->close();
 $conn->close();
 
 // Redirect back to the dashboard
-header("Location: dashboard.php?tab=invoices&message=" . urlencode($message));
+header("Location: sidebar.php?tab=invoices&message=" . urlencode($message));
 exit();
 ?>
